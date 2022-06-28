@@ -27,7 +27,12 @@ extension Date {
         return dateFormatter.string(from: date).capitalized
     }
     
-    
+        func dayOf(date: Date ) -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "hh:mm"
+        
+        return dateFormatter.string(from: date).capitalized
+    }
     
 }
 
